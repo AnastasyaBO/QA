@@ -26,7 +26,7 @@ class CryptoConverter:
         try:
             amount = float(amount)
         except ValueError:
-            raise ConvertionException(f"Не удалось обработать колличество {amount}")
+            raise ConvertionException(f"Не удалось обработать количество {amount}")
 
         quote_ticker = keys[quote]
         base_ticker = keys[base]
